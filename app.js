@@ -30,6 +30,7 @@ const seattle = {
         '6am','7am','8am','9am','10am','11am','12pm','1pm','2pm','3pm','4pm','5pm','6pm','7pm',
     ],
     cookieSales: [],
+
     projectedCookieSales: function() {
         for (let i = 0; i < this.hours.length; i++){
             let cust = this.getRandomCust(); 
@@ -38,3 +39,6 @@ const seattle = {
         }
     },
 };
+seattle.getRandomCust();
+seattle.projectedCookieSales();
+console.log('Seattle Sales: ', seattle.cookieSales);
