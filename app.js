@@ -1,5 +1,12 @@
 'use strict';
 
+// generates random numbers between min and max of customer values
+function randomNumber(){
+    return Math.floor(
+        Math.random() * (this.maxCustPerHour - this.minCustPerHour + 1) + this.minCust
+    );
+}
+
 // store the min/max hourly customers 
 const hours = ['6am','7am','8am','9am','10am','11am','12pm','1pm','2pm','3pm','4pm','5pm','6pm','7pm']
 
@@ -12,10 +19,4 @@ function generateSales(){
     }
 }
 
-// generates random numbers between min and max of customer values
-function randomNumber(){
-    return Math.floor(
-        Math.random() * (this.maxCustPerHour - this.minCustPerHour + 1) + this.minCust
-    );
-}
 
