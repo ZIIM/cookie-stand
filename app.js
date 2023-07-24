@@ -2,9 +2,8 @@
 
 // generates random numbers between min and max of customer values
 function randomNumber(){
-    return Math.floor(
-        Math.random() * (this.maxCustPerHour - this.minCustPerHour + 1) + this.minCust
-    );
+    return (
+        Math.floor(Math.random() * (this.maxCustPerHour - this.minCustPerHour + 1)) + this.minCust);
 }
 
 // store the min/max hourly customers 
@@ -19,4 +18,11 @@ function generateSales(){
     }
 }
 
+let seattleMin = 23;
+let seattleMax = 65;
 
+// const seattle = {
+//     minCustPerHour: seattleMin,
+//     maxCustPerHour: 
+
+// }
